@@ -1,0 +1,53 @@
+.flex-container{
+    padding: 0;
+    max-width: 300px;
+    display:flex;
+    list-style: none;
+}
+.flex-item{
+    background-color: blue;
+    font-size: 24px;
+    color: white;
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.row{
+    flex-direction: row;
+}
+
+.row-reverse{
+    flex-direction: row-reverse;
+}
+
+
+.column{
+    flex-direction: column;
+    float: left;
+}
+
+
+.column-reverse{
+    flex-direction: column-reverse;
+    float: right;
+}
+
+
+.row-reverse li{
+    background-color: green;
+}
+
+.column li{
+    background-color: yellow;
+    color: black;
+}
+
+.column-reverse li{
+    background-color: black;
+}
+
+
+

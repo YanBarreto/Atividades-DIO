@@ -1,0 +1,32 @@
+.flex-container{
+    display: flex;
+    border: 1px solid black;
+    width: 520px;
+}
+
+.item{
+    background-color: blue;
+    margin: 2px;
+    color: white;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.row-wrap{
+    flex-flow: row wrap;
+}
+
+.row-r-wrap{
+    flex-flow: row wrap-reverse ;
+}
+
+.r-row-wrap{
+    flex-flow: row-reverse wrap;
+}
+
+.r-row-r-wrap{
+    flex-flow: row-reverse wrap-reverse;
+}
