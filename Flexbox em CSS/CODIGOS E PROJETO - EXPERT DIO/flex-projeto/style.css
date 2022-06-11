@@ -1,109 +1,142 @@
 body{
-   margin: auto;
+margin: auto;
+max-width: 800px;
+
 }
 
 a{
-    color: white;
-    text-decoration: none;
+color: white;
+text-decoration: none;
 }
 
 header{
-    display: flex;
-    background-color: #122A57;
-    color: white;
-    font-size: 13px;
-    justify-content:space-around ;
-    max-width: 800px;
+display: flex;
+background-color: #122A57;
+color: white;
+font-size: 13px;
+justify-content:space-around ;
+max-width: 800px;
 }
 
 header h1{
-    align-self: center;
+align-self: center;
 }
 
 .menu{
-    padding-right: 50px;
-    display: flex;
-    margin: 0;
-    align-items: center;
+padding-right: 50px;
+display: flex;
+margin: 0;
+align-items: center;
 }
 
 .item-menu{
-    list-style: none;
-    margin: 20px;
-    font-size: 12px;
+list-style: none;
+margin: 20px;
+font-size: 12px;
 }
 
 .item-menu a{
-    color: white;
-    text-decoration: none;
+color: white;
+text-decoration: none;
 }
 
 section{
-    display: flex;
-    padding-top: 20px;
-    max-width: 800px;
-    flex-wrap: wrap;
+display: flex;
+padding-top: 20px;
+/*max-width: 800px;*/
+flex-wrap: wrap;
 
 }
 
 .item-body-container{
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+width: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
 
 }
 
 .item-body-container img{
-    width: 80%;
+width: 80%;
 }
 
 
 .saiba-mais{
-    display: flex;
-    flex-flow: column ;
-    justify-content: center;
-    align-items: flex-start;
+display: flex;
+flex-flow: column ;
+justify-content: center;
+align-items: flex-start;
 }
 
 .saiba-mais h1{
-    margin-bottom: 0px ;
+margin-bottom: 0px ;
 }
 
 .saiba-mais p{
-    margin-bottom: 20px;
+margin-bottom: 20px;
 }
 
 .saiba-mais a{
-    font-size: 12px;
-    padding: 4px 20px 4px 20px;
+font-size: 12px;
+padding: 4px 20px 4px 20px;
 }
 
 .quem-somos{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
 }
 
 .quem-somos p{
-    width: 80%;
+width: 80%;
 }
 
+.servicosContainer{
+    display: flex;
+    background-color: #122A57;
+    
+}
+
+
+.servicosSubContainer{
+display: flex;
+border: 2px dashed white;
+align-items: center;
+justify-content: center;
+}
+
+
+.servicosItem{
+    display: flex;
+    border: 1px solid white;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 10px;
+    height: 70%;
+            
+}
+
+
+.servicosItem img{
+    
+}
+
+
 .blue{
-    color: #122A57;
+color: #122A57;
 }
 
 .button{
-    background-color: #122A57;
-    border-radius: 10px;
-    text-align: center;
+background-color: #122A57;
+border-radius: 10px;
+text-align: center;
 }
 
 
 .small-text{
-    font-size: 10px;
+font-size: 10px;
 }
 
 .medium-text{
-    font-size: 12px;
+font-size: 12px;
 }
