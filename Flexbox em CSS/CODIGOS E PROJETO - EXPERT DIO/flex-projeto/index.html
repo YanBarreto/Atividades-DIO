@@ -9,7 +9,7 @@
 <body>
     <header>
         <h1>FlexTurismos</h1>
-        <ul class="menu flex-direction-r">
+        <ul class="menu ">
             <li class = "item-menu"><a href="#quem-somos">Quem Somos</a></li>
             <li class = "item-menu"><a href="#servicos">Serviços</a></li>
             <li class = "item-menu"><a href="#planos">Planos</a></li>
@@ -45,26 +45,26 @@
     
     </section>
  
+    <div class="servicos">
+        <h2>Serviços</h2>
+    </div>
+
     <div class="servicosContainer">
-        <div>
-            <h2>Serviços</h2>
-        </div> 
-        
         <div class="servicosSubContainer">
-            <div class= servicosItem>
-                <div><img src="./images/icon-2.png" alt="hospedagens"></div>
+            <div class= "servicosItem">
+                <img src="./images/icon-2.png" alt="hospedagens">
                 <p>Hospedagens</p>
                 <a href="#">Comprar Agora</a>
             </div>
 
-            <div class= servicosItem>
-               <div><img src="./images/icon-1.png" alt="pacote de viagens"></div>
+            <div class= "servicosItem primeiro">
+               <img src="./images/icon-1.png" alt="pacote de viagens">
                <p>Pacotes de viagens</p>
                <a href="#">Comprar Agora</a>
             </div>
 
-            <div class= servicosItem>
-                <div><img src="./images/icon-3.png" alt="roteiros personalizados"></div>
+            <div class= "servicosItem">
+                <img src="./images/icon-3.png" alt="roteiros personalizados">
                 <p>Roteiros personalizados</p>
                 <a href="#">Comprar Agora</a>
             </div>
@@ -72,10 +72,11 @@
         </div>
     </div>
 
-    <div>
+    <div class="planosContainer">
 
-        <div>
-            <h3>Plano 2</h3>
+        <div class="planosItem">
+            <h3>Plano 1</h3>
+            <p class="faixaAzul"> </p>
             <ul>
                 <li>Suporte 24h</li>
                 <li>Serviços de quarto</li>
@@ -84,8 +85,9 @@
             <a href="#">Saiba Mais!</a>
         </div>
 
-        <div>
+        <div class="planosItem">
             <h3>Plano 2</h3>
+            <p class="faixaAzul"> </p>
             <ul>
                 <li>Suporte 24h</li>
                 <li>Serviços de quarto</li>
@@ -96,8 +98,9 @@
             <a href="#">Saiba Mais!</a>
         </div>
 
-        <div>
+        <div class="planosItem">
             <h3>Plano 3</h3>
+            <p class="faixaAzul"> </p>
             <ul>
                 <li>Suporte 24h</li>
                 <li>Serviços de quarto</li>
@@ -110,7 +113,7 @@
         </div>
     </div>
 
-    <footer>
+    <footer class="footerContainer">
         <p>&copy; 2021 CSS Flexbox</p>
         <p>Desenvolvido por: Seu nome aqui dev</p>
     </footer>
