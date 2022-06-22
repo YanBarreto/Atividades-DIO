@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossário</title>
+    <style>
+        .checked {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Estrutura HTML</h1>
+    <form name="form_main">
+        <label for="task">Tarefa: </label>
+        <input type="text" name="task" id="task" />
+        <button type="button" onclick="add()">Add</button>
+    </form>
+    <ul>
+
+    </ul>
+</body>
+
+<script>
+
+    let li = document.createElement('li');
+    let check = document.createElement('input');
+    check.type = 'checkbox';
+    check.checked = false;
+    function add() {
+
+
+        let input_value = document.form_main.task.value;
+        let input_text = document.createTextNode(input_value);
+
+        li.appendChild(input_text);
+
+        document.querySelector('ul').appendChild(li);
+        document.querySelector('li').appendChild(check);
+
+        document.form_main.task.value = "";
+        doing();
+    }
+
+    function doing() {
+        check.addEventListener('change', function () {
+            if (this.checked == true) {
+                console.log("Checkbox is checked..");
+            } else {
+                console.log("Checkbox is not checked..");
+            }
+        });
+    }
+
+    function del() {
+
+    }
+
+</script>
+
+</html>

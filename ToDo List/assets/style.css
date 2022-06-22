@@ -14,7 +14,7 @@
     align-items: center;
 }
 
-#todoList li{
+li{
     color: white;
        
 }
@@ -53,17 +53,21 @@
 .list{
     min-width: 100%;
     max-height: 50%;
+    
 }
 
-#todoList{
+.todoList{
     display: flex;
     flex-flow: column wrap;
     height: 100%;
+    
 
 }
 
 .checkBoxList{
     margin: 4px;
 }
+
+
 
 

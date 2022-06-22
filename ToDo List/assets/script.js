@@ -1,50 +1,44 @@
-var contId = 0;
 
-function adicionar(){
-    var input = document.getElementById("input").value;
-    var ulist = document.getElementById("todoList");
-    var li = document.createElement("li");
-    
-    var checkBox = document.createElement("input");
-    var label = document.createElement("label");
 
-    var id = contId + 1;
 
-    checkBox.setAttribute("type","checkbox");
-    checkBox.setAttribute("class","checkBoxList");
-    checkBox.setAttribute("id","checkBox_"+id);
-    checkBox.setAttribute("onclick","itemConcluido()");
 
-    label.setAttribute("for","checkBox_"+id);
-    label.setAttribute("id","checkBoxItem_"+id);
-    label.appendChild(document.createTextNode(input));
+function adicionar() {
 
-    li.appendChild(checkBox);
-    li.appendChild(label);
-    ulist.appendChild(li);
-    
-    contId = id;
-    
+    /* Criando elementos */
+
+    let li = document.createElement("li");
+
+
+    let checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.className = "checkBoxList";
+
+    /* Incluindo elementos a ul */
+
+    let ul = document.querySelector("ul");
+    let novaTarefa = document.formulario.task.value; //navegando pelo codigo... name do elemento.
+    novaTarefa = document.createTextNode(novaTarefa);
+
+    ul.appendChild(li);
+    li.appendChild(checkbox);
+    li.appendChild(novaTarefa);
+
+    realizada(checkbox, li);
+
 }
 
-function itemConcluido(){
-    
-    var feito = document.getElementsByClassName("checkBoxList");
 
-    for (let index = 0; index <= feito.length; index++) {
 
-        if(feito[index].checked == true){
-            let num = index+1;
-            document.getElementById("checkBoxItem_"+num).style.textDecoration = "line-through"; 
-        }else{
-            document.getElementById("checkBoxItem_"+num).style.textDecoration = "none"; 
+function realizada(checkbox, li) {
+    checkbox.addEventListener("change", () => {
+        if (checkbox.checked === true) {
+            li.style.textDecoration = "line-through";
+            li.style.color = "gray";
+
+        } else {
+            li.style.textDecoration = null;
+            li.style.color = null;
         }
-        
 
-        //ESTUDAR EVENT LISTENER
-              
-    }
-
-       
-    }
-
+    });
+}
