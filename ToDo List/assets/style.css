@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    font-family: Verdana;
+    list-style: none;
+}
+
+.cover{
+    background-image: url("background.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#todoList li{
+    color: white;
+       
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 40vh;
+    min-width: 500px;
+    min-height: 300px;
+}
+
+.wrapper h1{
+    margin-bottom: 40px;
+    color: azure;
+}
+
+
+.form{
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.form button {
+    margin-left: 15px;
+    background-color: azure;
+    border-radius: 4px;
+    border: 0px;
+}
+
+.list{
+    min-width: 100%;
+    max-height: 50%;
+}
+
+#todoList{
+    display: flex;
+    flex-flow: column wrap;
+    height: 100%;
+
+}
+
+.checkBoxList{
+    margin: 4px;
+}
+
+
