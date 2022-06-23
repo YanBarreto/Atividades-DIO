@@ -8,7 +8,6 @@ function adicionar() {
 
     let li = document.createElement("li");
 
-
     let checkbox = document.createElement("input");
     checkbox.type = "checkbox";
     checkbox.className = "checkBoxList";
