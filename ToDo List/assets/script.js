@@ -22,7 +22,7 @@ function adicionar() {
     li.appendChild(checkbox);
     li.appendChild(novaTarefa);
 
-    realizada(checkbox, li);
+    realizada(checkbox, li); //Cria 1 listener a cada clique em adicionar e cada um fica escutando o evento da sua propria checkbox e li.
 
 }
 
